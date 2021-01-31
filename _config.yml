@@ -16,7 +16,7 @@
 title: Oriana Turus
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Oriana Turus writer and dancer
+  Oriana Turus autrice di romanzi e racconti alternativi per l'infanzia
 skills: 'writer, dancer, accountant'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -31,11 +31,9 @@ social:
   - title: twitter
     url: https://twitter.com/ori_tur81
   - title: facebook
-    url: https://www.facebook.com/oriana.turus
+    url: https://www.facebook.com/ilfilodioriana
   - title: instagram
-    url: https://www.instagram.com/orianaturus/
-  - title: blogger
-    url: https://avevamounasolamaestra.blogspot.com/
+    url: https://www.instagram.com/oriana_turus_autrice/
 
 # Build settings
 markdown: kramdown
