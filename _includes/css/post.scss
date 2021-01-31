@@ -1,0 +1,37 @@
+.content {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "head head head"
+    "content-left content content"
+    "footer footer footer";
+  grid-gap: 10px;
+}
+
+.content-text {
+  grid-area: content;
+  font-family: monospace;
+  font-size: 5vmin;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  width: 85%;
+  padding: 10px;
+}
+
+.post-index {
+  grid-area: content;
+  align-content: center;
+}
+
+.post-index ul {
+  list-style-type: none;
+}
+
+.post-index ul li a{
+  font-family: monospace;
+  font-size: 5vmin;
+  color: white;
+}

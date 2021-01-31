@@ -1,0 +1,15 @@
+<section id="main">
+  <div class="main-container">
+    <span class="main-title glow">Oriana Turus</span>
+    <div class="info-contact">
+      <span class="title-text">Working mum & indie writer</span>
+      <div class="contact">
+        {% for network in site.social %}
+          <a href="{{ network.url }}" title="link to Oriana {{ network.title }}">
+            <i class="fab fa-{{ network.title }} contact-style"></i>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
