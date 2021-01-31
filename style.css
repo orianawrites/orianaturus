@@ -1,3 +1,124 @@
----
-layout: style
----
+.main-container {
+  //background-color: black;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "head-left head head-right"
+    "left title right"
+    "bottom-left whoiam bottom-right";
+  grid-gap: 10px;
+}
+
+.main-title {
+  grid-area: title;
+  color: white;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15vmin;
+  text-align: center;
+  margin: 1vw 0 1vw 0;
+  line-height: 100%;
+}
+
+.glow {
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff66ff, 0 0 40px #ff66ff, 0 0 50px #ff66ff, 0 0 60px #ff66ff, 0 0 70px #ff66ff, 0 0 80px #ff66ff;
+  }
+}
+
+@media (max-width: 414px) {
+  .info-contact {
+    grid-area: bottom-left;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 415px) {
+  .info-contact {
+    grid-area: bottom-right;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.title-text {
+  font-family: monospace;
+  font-size: 5vmin;
+  color: white;
+}
+
+.contact-style {
+  font-size: 3vmin;
+  color: white;
+}
+
+.content {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "head head head"
+    "content-left content content"
+    "footer footer footer";
+  grid-gap: 10px;
+}
+
+.content-text {
+  grid-area: content;
+  font-family: monospace;
+  font-size: 5vmin;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  width: 85%;
+  padding: 10px;
+}
+
+.post-index {
+  grid-area: content;
+  align-content: center;
+}
+
+.post-index ul {
+  list-style-type: none;
+}
+
+.post-index ul li a{
+  font-family: monospace;
+  font-size: 5vmin;
+  color: white;
+}
+
+
+body {
+  background-image: url('images/clem-onojeghuo-XW-Z9L930CY-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-row {
+  flex: 1;
+}
