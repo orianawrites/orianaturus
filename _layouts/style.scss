@@ -2,11 +2,16 @@
 ---
 {% include css/main.scss %}
 {% include css/post.scss %}
+{% include css/books.scss %}
 {{ content }}
 body {
-  background-image: url('images/clem-onojeghuo-XW-Z9L930CY-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url('images/moon_romance.jpg');
+  background-blend-mode: multiply;
+  background-color: #e725f7;
   height: 100%;
   overflow-x: hidden;
   margin: 0px;
