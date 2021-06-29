@@ -150,19 +150,6 @@
   color: white;
 }
 
-.content-books {
-  display: grid;
-  width: 100vw;
-  height: 100vw;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "head head head"
-    "content-left content content"
-    "bottom-left whoiam bottom-right";
-  grid-gap: 10px;
-}
-
 
 body {
   background-size: cover;
