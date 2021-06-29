@@ -2,7 +2,6 @@
 ---
 {% include css/main.scss %}
 {% include css/post.scss %}
-{% include css/books.scss %}
 {{ content }}
 body {
   background-size: cover;
